@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// com o uso do SASS é possível fazer o encadeamento
+body {
+    font: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #FFF;
+
+    h1 {
+        font-size: 80px;  
+    }
+}
+//  todo h1 recebe os parametros encadeados no body
