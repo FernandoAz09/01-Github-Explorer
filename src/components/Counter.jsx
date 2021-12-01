@@ -1,5 +1,8 @@
 import { useState } from "react"
 
+// imutabilidade = não alterar valor original da variável já alocada na memória
+// Em React o certo é criar um novo espaço na memoria com nova informação
+
 export function Counter() {
     const [counter, setCounter] = useState(0)
     
@@ -11,7 +14,7 @@ export function Counter() {
         <div>
             <h2>{ counter }</h2>
             <button type="button" onClick={increment}>
-                Increment
+                Increment 
             </button>
         </div>
     )
