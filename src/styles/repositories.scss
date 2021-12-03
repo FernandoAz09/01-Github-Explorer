@@ -1,0 +1,29 @@
+section.repository-list {
+   margin: 40px; 
+
+   h1 { // encadeamento próprio do sass // ou seja, todo h1 dentro dessa section
+       margin-bottom: 16px;
+   }
+
+   ul {
+       list-style: none;
+       li {
+           & + li { // & no sass referencia o proprio elemento // & + li => li que tem li antes dela
+               margin-top: 20px;
+           }
+           
+          p {
+              font-size: 14px;
+              color: #444;
+              margin-top: 8px;
+          } 
+
+          a {
+              display: inline-block;
+              margin-top: 16px;
+              text-decoration: none;
+              color: #8257e6;
+          }
+       }
+   }
+}
