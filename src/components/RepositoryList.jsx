@@ -1,11 +1,7 @@
-import { RepositoryItem } from "./RepositoryItem"
 import { useEffect, useState } from "react" // hooks do React
+import { RepositoryItem } from "./RepositoryItem"
 
 import '../styles/repositories.scss'
-
-//https://api.github.com/orgs/rocketseat/repos
-
-
 
 export function RepositoryList() {
     const [repositories, setRepositories] = useState([]) // Carregando uma LISTA sempre com um ARRAY VAZIO ([]) // hook para alterar o estado
@@ -22,7 +18,7 @@ export function RepositoryList() {
 
             <ul>
                 {repositories.map(repository => { // map() percorrendo o array para retornar de forma dinamica as informações.
-                return <RepositoryItem key={repository.name} repository={repository} />
+                return <RepositoryItem key={repository.name} repository={repository} /> //resolvendo erro utilizando a propriedade key
                 })}
             </ul>
         </section>
